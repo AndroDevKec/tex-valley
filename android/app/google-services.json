@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "992894150755",
+    "project_id": "tex-valley",
+    "storage_bucket": "tex-valley.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992894150755:android:346e74741b3022ea18f056",
+        "android_client_info": {
+          "package_name": "com.example.tex_valley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992894150755-gvnuo44k7em8kv3rgft5l08r3tj036sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tex_valley",
+            "certificate_hash": "0b3acc646b238f675b9f861de54ce9151615a8bf"
+          }
+        },
+        {
+          "client_id": "992894150755-op3ug3gemsovc81m08o47hg2roq7ae3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNKSEwfLYTC97lSHZgKdtkUL2nLVCQn9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992894150755-op3ug3gemsovc81m08o47hg2roq7ae3b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
