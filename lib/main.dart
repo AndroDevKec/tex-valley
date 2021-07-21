@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tex_valley/constants.dart';
+import 'package:tex_valley/login_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellowAccent,
+      backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,7 +46,13 @@ class _SplashScreenState extends State<SplashScreen> {
               height: 200,
             ),
             SizedBox(
-              height: 20,
+              height: 10,
+            ),
+            Center(
+              child: Text("sew fine, save time"),
+            ),
+            SizedBox(
+              height: 80,
             ),
             CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
@@ -56,25 +64,6 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Text("Loading Tex-valley"),
             )
           ],
-        ),
-      ),
-    );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.green, title: Text("Tex-Valley")),
-      body: Container(
-        child: Center(
-          child: Text("Login screen"),
         ),
       ),
     );
