@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tex_valley/constants.dart';
 import 'package:tex_valley/main.dart';
+import 'package:tex_valley/password_reset.dart';
 import 'package:tex_valley/profilescreen.dart';
 import 'package:tex_valley/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -171,7 +172,13 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 250),
                   child: FlatButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => PasswordReset()),
+                        );
+                      },
                       child: Text("Forget Password?",
                           style:
                               TextStyle(color: Colors.indigo, fontSize: 16))),
