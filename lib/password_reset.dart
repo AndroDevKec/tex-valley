@@ -2,11 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tex_valley/constants.dart';
 import 'package:tex_valley/login_screen.dart';
-
-import 'package:tex_valley/profilescreen.dart';
 import 'package:tex_valley/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class PasswordReset extends StatefulWidget {
   @override
@@ -16,22 +13,6 @@ class PasswordReset extends StatefulWidget {
 class _PasswordResetState extends State<PasswordReset> {
   GlobalKey<FormState> formkey = GlobalKey<FormState>();
   String _mail;
-  /*void signIn(BuildContext context) async {
-    await Firebase.initializeApp();
-    FirebaseAuth.instance
-        .signInWithEmailAndPassword(email: _mail, password: _pass)
-        .catchError((onError) {
-      showdialogbox(context, "No account found");
-    }).then((authUser) {
-      if (authUser.user != null)
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => ProfileScreen()),
-        );
-      //ieBUkCerAuWIUKML1FinjjULShu1
-    });
-  }*/
-
   Future showdialogbox(BuildContext context, String message) async {
     return showDialog<void>(
         context: context,
